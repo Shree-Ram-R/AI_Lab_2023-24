@@ -1,6 +1,6 @@
 # Ex.No: 9  Logic Programming –  Computer Maintenance Expert System
-### DATE:                                                                            
-### REGISTER NUMBER : 
+### DATE:                                                                           
+### REGISTER NUMBER : 212222040154
 ### AIM: 
 Write a Prolog program to build a computer maintenance expert system.
 ###  Algorithm:
@@ -14,19 +14,35 @@ Write a Prolog program to build a computer maintenance expert system.
 8. Find the fault of computer by passing query to system.
      
 ### Program:
-
-
-
-
-
-
-
-
-
-
+```
+fault(printer_head) :-
+	problem(not_printing),
+	problem(missing_dots),
+	problem(nonuniform_printing).
+fault(ribbon) :-
+	problem(not_printing),
+	problem(missing_dots),
+	problem(spread_ink).
+fault(paper) :-
+	problem(not_printing),
+	problem(paper_jam),
+	problem(out_of_paper).
+fault(motherboard) :-
+	problem(long_beep),
+	problem(short_beep).
+fault(hard_disc) :-
+	problem(two_short_beeps),
+	problem(blank_display).
+problem(not_printing).
+problem(missing_dots).
+problem(spread_ink).
+problem(two_short_beeps).
+problem(blank_display).
+```
 
 ### Output:
 
+![Screenshot 2024-03-23 152933](https://github.com/santhakumar-M/AI_Lab_2023-24/assets/121998012/d5d6be36-cf9e-41fd-b332-54bc1ff57df0)
 
 
 ### Result:
