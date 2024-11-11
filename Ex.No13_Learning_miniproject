@@ -4,7 +4,34 @@
 ### AIM: 
 To write a program to train the classifier for -----------------.
 ###  Algorithm:
-
+1. Initialize CLI Tool
+Start the command-line tool, setting up the initial configuration.
+Prompt the user to load or specify the dataset (e.g., CSV or database).
+2. Data Loading and Profiling
+Load Data: Load the dataset and display a quick summary (e.g., number of rows, columns, and types of each feature).
+Profile Data: Analyze the data, generating basic statistics (mean, median, mode, standard deviation, etc.) and detecting features like missing values, outliers, and unique values.
+Display Initial Summary: Output the data profile summary with recommendations for preprocessing (e.g., columns with missing values, potential categorical columns for encoding).
+3. Real-Time Data Visualization
+Based on user input, display various types of visualizations using libraries like Matplotlib or Seaborn:
+Distribution Plots: Plot histograms or KDEs for continuous features.
+Outlier Detection: Display box plots or scatter plots highlighting outliers.
+Correlation Heatmaps: Visualize correlations between features.
+Interactive CLI Commands: Allow users to enter commands to specify the type of visualization they want to see, updating the display accordingly.
+4. Data Transformation Commands
+Provide CLI options for common transformations:
+Handle Missing Values: Commands to drop, fill, or impute missing values.
+Scaling and Normalization: Allow users to apply scaling techniques (e.g., Min-Max, Standard scaling) and visualize changes.
+Encoding Categorical Variables: Automate encoding processes like one-hot encoding, and display how the data structure changes.
+Preview Transformation Results: Show sample rows or summaries after each transformation.
+5. Automated Preprocessing Suggestions
+Based on the data profile, suggest preprocessing steps automatically:
+For example, suggest scaling for numerical columns, encoding for categorical features, or outlier treatment.
+Confirmation and Interactive Edits: Allow users to review and approve each suggested step, showing results interactively.
+6. Save and Export Processed Data
+After all transformations are confirmed, provide an option to save the preprocessed data in various formats (e.g., CSV, Excel).
+Allow exporting a summary report of all transformations and visualizations applied.
+7. End Session
+End the session and provide options to restart or exit.
 ### Program:
 
 
